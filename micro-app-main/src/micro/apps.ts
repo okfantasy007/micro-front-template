@@ -26,19 +26,7 @@ const apps = [
     entry: VUE_MICRO_APP,
     container: "#frame",
     activeRule: "/vue",
-  },
-  {
-    name: "AngularMicroApp",
-    entry: ANGULAR_MICRO_APP,
-    container: "#frame",
-    activeRule: "/angular",
-  },
-  {
-    name: "StaticMicroApp",
-    entry: STATIC_MICRO_APP,
-    container: "#frame",
-    activeRule: "/static",
-  },
+  }
 ];
 
 export default apps;

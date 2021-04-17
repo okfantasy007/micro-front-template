@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-     <a-menu :selectedKeys="[currentRoute]" mode="horizontal" theme="dark">
+     <!--<a-menu :selectedKeys="[currentRoute]" mode="horizontal" theme="dark">
       <a-menu-item 
         v-for="(item) in menus" 
         :key="item.key"
         >
         <router-link :to="item.route">{{item.title}}</router-link>
       </a-menu-item>
-     </a-menu>
+     </a-menu>-->
     <router-view :key="(new Date()).getTime()" />
   </div>
 </template>
@@ -23,11 +23,6 @@ export default {
           key: "vue",
           route: "/",
           title: "主页"
-        },
-        {
-          key: "vue-list",
-          route: "/list",
-          title: "列表页"
         }
       ]
     }

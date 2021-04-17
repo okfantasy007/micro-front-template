@@ -18,13 +18,18 @@ const fetchVegetable = (page, pageSize) => {
 const { Column } = Table;
 const List = () => {
   // 设置列表信息
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([{
+      _id: 1,
+      poster: 'http://images.wondershare.com/wsc-18/assets/icon/logo/wondershare-square-white.png',
+      name: 'bbb',
+      price: 10
+  }]);
   // 设置页码信息
   const [page, setPage] = useState(1);
   const [pageInfo, setPageInfo] = useState();
 
   useEffect(() => {
-    console.log({ page });
+    /*console.log({ page });
     (async () => {
       const result = await fetchVegetable(page, 10);
       const { vegetableList } = result.data;
@@ -35,8 +40,10 @@ const List = () => {
         total: vegetableList.total,
         onChange: (page) => setPage(page),
       }));
-    })();
+    })();*/
   }, [page]);
+
+
 
   return (
     <Card title="React 子应用列表页">

@@ -17,7 +17,14 @@ export default {
 
   data() {
     return {
-      data: [],
+      data: [
+          {
+              _id: 1,
+              poster: 'aaa',
+              name: 'bbb',
+              price: 10
+          }
+      ],
       pageInfo: {
         onChange: page => this.fetchVegetable(page, 10)
       },
@@ -46,7 +53,7 @@ export default {
   },
 
   created() {
-    this.fetchVegetable(1, 10);
+//    this.fetchVegetable(1, 10);
   }
 }
 </script>

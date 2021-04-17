@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Router basename={BASE_NAME}>
       <section>
-        <Menu
+        {/*<Menu
           onClick={() => setRefresh((refresh) => ++refresh)}
           selectedKeys={selectedKeys}
           mode="horizontal"
@@ -42,7 +42,7 @@ const App = () => {
               <Link to={item.route}>{item.title}</Link>
             </Menu.Item>
           ))}
-        </Menu>
+        </Menu>*/}
         <Suspense fallback={null}>
           <Switch>
             <Route exact path="/" component={Home} />
