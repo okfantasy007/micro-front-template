@@ -4,8 +4,6 @@ console.log(config);
 const {
   REACT_MICRO_APP,
   VUE_MICRO_APP,
-  ANGULAR_MICRO_APP,
-  STATIC_MICRO_APP,
 } = config;
 
 const apps = [
